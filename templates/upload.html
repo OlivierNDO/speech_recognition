@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload MP3 for Transcription</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for GitHub and LinkedIn Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin-top: 50px;
+        }
+        .card {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .btn-upload {
+            background-color: #007bff;
+            color: white;
+        }
+        .btn-upload:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1 class="text-center">Upload an MP3 File</h1>
+        <p class="text-center">Select an MP3 file to transcribe and detect its language.</p>
+        <form method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="file">Choose MP3 file:</label>
+                <input type="file" class="form-control-file" id="file" name="file" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-upload">Upload & Transcribe</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer with GitHub and LinkedIn Icons and Visible URLs -->
+<footer class="text-center mt-5">
+    <a href="https://github.com/OlivierNDO" target="_blank" class="mr-3">
+        <i class="fab fa-github fa-2x"></i> https://github.com/OlivierNDO
+    </a>
+    <br>
+    <a href="https://www.linkedin.com/in/oliviernicholas/" target="_blank">
+        <i class="fab fa-linkedin fa-2x"></i> https://www.linkedin.com/in/oliviernicholas/
+    </a>
+</footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
